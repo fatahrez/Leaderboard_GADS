@@ -8,8 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Leaderboard">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.Leaderboard"
+        android:autoRevokePermissions="allowed">
+        <activity android:name=".LeaderboardActivity"></activity>
+        <activity android:name=".MainActivity"
+            android:theme="@style/Theme.SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
